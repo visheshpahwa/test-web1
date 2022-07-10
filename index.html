@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .item1 { grid-area: first; }
+        .item2 { grid-area: second; }
+        .item3 { grid-area: third; }
+        .item4 { grid-area: fourth; }
+        .item5 { grid-area: fifth; }
+        .item6 { grid-area: sixth; }
+        
+        .grid-container {
+          display: grid;
+          grid-template-areas:
+            'first first first second second second'
+            'third third third third third third'
+            'fourth fourth fourth fifth fifth fifth'
+            'fourth fourth fourth sixth sixth sixth';
+          gap: 10px;
+          background-color: white;
+          padding: 10px;
+        }
+        
+        .grid-container > div {
+          background-color: white;
+          text-align: center;
+          padding: 20px 20px;
+          font-size: 30px;
+        }
+        .grid-container > div >h1{
+            color: goldenrod;
+        }
+        .grid-container > div >h1 >p{
+            color: black;
+            text-align: center;
+            font-size: smaller;
+        }
+        .container{
+            margin: 10px auto;
+            width: 60%;
+        }
+        </style>
+    <title>Design</title>
+</head>
+<body>
+    <div class="container">
+        <div class="grid-container">
+            <div class="item1"><h1>8.4M</h1> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, maxime ullam. Vero exercitationem similique, incidunt dolores eius eos officiis. Sunt!</p></div>
+            <div class="item2"><h1>7.9M</h1> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro culpa optio corrupti? Beatae quibusdam aspernatur magnam quisquam quaerat labore fugit.</p></div>
+            <div class="item3"><h1>36.6M</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi placeat atque illo. Id ab illo eveniet voluptatibus, ex nostrum ullam!</p></div>  
+            <div class="item4"><h2>Our Footprints</h2> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium eaque soluta maiores asperiores error earum debitis porro pariatur distinctio consequatur corporis atque dolores, expedita, fugiat nemo doloremque in odit commodi. Ipsum ad explicabo qui alias optio non cumque tempora illum!</p> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium eaque soluta maiores asperiores error earum debitis porro pariatur distinctio consequatur corporis atque dolores, expedita, fugiat nemo doloremque in odit commodi. Ipsum ad explicabo qui alias optio non cumque tempora illum!</p></div>
+            <div class="item5"><h1>8679</h1> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores minus consectetur iure quisquam natus numquam odio veritatis fuga atque soluta.</p></div>
+            <div class="item6"><h1>373.79</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ipsa hic voluptas nemo ratione nisi quod explicabo magni voluptatem ad.</p></div>
+          </div>
+    </div>
+    
+</body>
+</html>
